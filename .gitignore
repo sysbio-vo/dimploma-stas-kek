@@ -1,3 +1,5 @@
 # bwt_test (Rust lang)
 /bwt_test/Cargo.lock
 /bwt_test/target/
+/samples/
+/reference_genome/

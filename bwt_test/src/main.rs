@@ -30,11 +30,11 @@ fn string_to_nucleotides(input_string: &str) -> Vec<Nucleotide> {
 }
 
 fn main() {
-    let some_sequence = string_to_nucleotides("GGTAAGTGCTCTAGTACAAACACCCCCAATATTGTGATATAATTAAAATTATATTCATATTCTGTTGCCAGATTTTACACTTTTAGGCTATATTAGAGCCATCTTCTTTGAAGCGTTGTCTATGCATCGATCGACGACTG");
+    let some_sequence = string_to_nucleotides(&"GGTAA".repeat(100));
+    let sequence_length = some_sequence.len();
 
     // First step of BWT: we need to generate array of rotations
-    let mut rotations = Vec::new();
-    let sequence_length = some_sequence.len();
+    let mut rotations = Vec::with_capacity(sequence_length);
     let time_start = Instant::now();
     for rotation in 0..sequence_length {
         let generated_rotation = [
@@ -49,7 +49,7 @@ fn main() {
     //println!("Rotations: {:?}", rotations);
     rotations.sort();
     //println!("Sorted rotations {:?}", rotations);
-    let mut bwt = Vec::new();
+    let mut bwt = Vec::with_capacity(sequence_length);
     for rotation in rotations.iter() {
         bwt.push(rotation.last().unwrap());
     }

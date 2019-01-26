@@ -14,8 +14,14 @@ usualy it's rare that illumina or other sequencing devices skip ore multiply pai
 
 
 
+
 # Links section:
 - Lecture about BWA and aligneing https://www.youtube.com/watch?v=P3ORBMon8aw
+- https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/bwt.pdf
+- https://www.coursera.org/lecture/algorithms-on-strings/burrows-wheeler-transform-GAA6S
+- https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-arrays/tutorial/
+
+- Where to find fastq data from miniion <https://www.ebi.ac.uk/ena/data/warehouse/search?query=%22instrument_model=%22MinION%22%22&domain=read>
 
 
 
@@ -36,7 +42,7 @@ After reading article I still don't understand why it could happen.
 - Read Roberts,M. et al. (2004) Reducing storage requirements for biological sequence comparison. Bioinformatics, 20, 3363–3369.
 - read about heuristic algorithms
 - wtf is homopolymercompressed k-mers
-- write Burrows–Wheeler transformer
+- i need to know how the fuck they generate genome efficently, becuase even for 50k nucleotides it's already needs 5seconds on one core (and 2.5 Gb RAM)
 
 # Long term tasks:
 - write aligner similar/based on BWA to understand challanges of this process.
@@ -45,3 +51,4 @@ After reading article I still don't understand why it could happen.
 
 Some things i've already done:
 - watched https://www.youtube.com/watch?v=P3ORBMon8aw , and finally understood how bwa and bowtie works, but now i have even more questions/ides that i'll write to ideas section
+- write Burrows–Wheeler transformer

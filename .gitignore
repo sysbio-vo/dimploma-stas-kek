@@ -1,4 +1,3 @@
 # bwt_test (Rust lang)
 /bwt_test/Cargo.lock
 /bwt_test/target/
-/bwt_test/**/*.rs

@@ -43,6 +43,7 @@ After reading article I still don't understand why it could happen.
 - read about heuristic algorithms
 - wtf is homopolymercompressed k-mers
 - i need to know how the fuck they generate genome efficently, becuase even for 50k nucleotides it's already needs 5seconds on one core (and 2.5 Gb RAM)
+(Okay, so in bowtie2 sources they write they use : "Fast BWT in Small Space by Blockwise Suffix Sorting Juha K¨arkk¨ainen")(it's avalible in articles/bwt folder)
 
 # Long term tasks:
 - write aligner similar/based on BWA to understand challanges of this process.

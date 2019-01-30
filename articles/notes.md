@@ -1,6 +1,24 @@
 Folder for downloaded articles, and probably some kind of literature overview.
 
 
+
+Articles should be divided in several categories that i need to bring up, for now i think it should be (WIP):
+
+- some information about sequencing
+- theory about nanopore
+- theory about preprocessing nanopore data before fastaq format?
+- some information about how popular aligners work? (like STAR, bowtie2, bwa-mem etc)
+- how minimap works (basically, it's one and only aligner that can compete with "our aligner")
+- Sufix array construction?
+- BWT counstruction (if we will use it)?
+- finding short substings?
+- Smith-Western aligning?
+
+
+
+
+
+
 li2018.pdf
 Heng Li Minimap2: pairwise aligment for nucleotide sequences.
 As written in materials section:
@@ -15,6 +33,9 @@ Notes:
 	- aligning short paired-end reads
 for some reason they divide process in three different alignings.
 - they still have much of math that i don't understand :(((
+
+
+
 
 
 

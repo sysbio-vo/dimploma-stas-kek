@@ -3,6 +3,19 @@ The one and only diploma project implemented by my best student everrrrr
 
 
 
+
+# Helpfull defentions:
+![SA](/included/sa_defenition.png?raw=true "SA")
+
+![bwt](/included/bwt_karkkainen.png?raw=true "bwt")
+
+
+
+
+
+
+
+
 # Ideas/Thoughts:
 - we need to know some parameters of errors in nanopore, here is why:
 usual aligning takes place when errors are more on "low probability" side of things, but in nanopore it's in 10% that there will be some error in reading.

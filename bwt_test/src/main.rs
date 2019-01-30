@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 use std::time::Instant;
 
+
 #[derive(Debug, Clone, Copy, Eq, PartialEq, PartialOrd, Ord)]
 enum Nucleotide {
     A,
@@ -11,6 +12,12 @@ enum Nucleotide {
     END,
 }
 
+
+
+
+
+
+
 fn string_to_nucleotides(input_string: &str) -> Vec<Nucleotide> {
     let mut output_vec = Vec::new();
     for character in input_string.chars() {
@@ -19,11 +26,14 @@ fn string_to_nucleotides(input_string: &str) -> Vec<Nucleotide> {
             'G' => Nucleotide::G,
             'T' => Nucleotide::T,
             'C' => Nucleotide::C,
+            'a' => Nucleotide::A,
+            'g' => Nucleotide::G,
+            't' => Nucleotide::T,
+            'c' => Nucleotide::C,
             '$' => Nucleotide::END,
             _ => Nucleotide::N,
         })
     }
-
     output_vec.push(Nucleotide::END);
     output_vec
 }
